@@ -8,9 +8,8 @@ Just copy and paste the commands below and press enter!
 
 - First, install curl:
 
-```diff
-- Ubuntu:
-```
+- ![#f03c15] Ubuntu:
+
 apt install curl
 ```
 
