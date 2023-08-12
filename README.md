@@ -44,3 +44,13 @@ bash <(curl -Ls https://raw.githubusercontent.com/shawshanck/SSH-Tunnel/main/add
 bash <(curl -Ls https://raw.githubusercontent.com/shawshanck/SSH-Tunnel/main/addnew.sh --ipv4)
 ```
 <hr>
+
+<h3>Notes:</h3>
+
+This script saves a tunnel.sh file and a cronjob which runs automatically after machine reboot. So there is no need to configure the tunnels every time.
+
+To edit configured tunnels refer to tunnel.sh file and edit it with desired editor. For example:
+
+```
+nano /usr/local/bin/tunnel.sh
+```
