@@ -8,12 +8,33 @@ Just copy and paste the commands below and press enter!
 
 First, install curl:
 
+Ubuntu:
+
 ```
 apt install curl
 ```
+
+Cent OS:
+```
+sudo dnf install curl
+```
+
 Then use the command below:
 
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/shawshanck/SSH-Tunnel/main/install.sh --ipv4)
+```
+<hr>
+
+To add new tunnel for the same destination IP address, use command below:
+
+```
+bash <(curl -Ls https://raw.githubusercontent.com/shawshanck/SSH-Tunnel/main/add.sh --ipv4)
+```
+
+To add new tunnel for a new destination IP address, use command below:
+
+```
+bash <(curl -Ls https://raw.githubusercontent.com/shawshanck/SSH-Tunnel/main/addnew.sh --ipv4)
 ```
 <hr>
