@@ -6,9 +6,8 @@ With this script you can create a SSH Tunnel between 2 servers. Everything is au
 
 Just copy and paste the commands below and press enter!
 
-First, install curl:
+- First, install curl:
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
 
 Ubuntu:
 
