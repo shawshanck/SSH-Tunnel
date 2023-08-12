@@ -81,3 +81,7 @@ sudo ssh -p ${desSP:-"22"} -f -N -L 0.0.0.0:${srcSP:-"1022"}:${desIP:-"192.168.1
         fi
 
     read -rp "Add More Tunnels (Current Destination IP)? (y/n): " moreTUN
+    if [[ "$moreTUN" == [yY] ]]; then
+    bash <(curl -Ls https://raw.githubusercontent.com/shawshanck/SSH-Tunnel/main/add.sh --ipv4)
+    else
+    exit
