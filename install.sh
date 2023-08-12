@@ -76,15 +76,6 @@ sudo ssh -p ${desSP:-"22"} -f -N -L 0.0.0.0:${srcSP:-"1022"}:${desIP:-"192.168.1
 
             cd /etc
 
-            while read line; do
-
-                # Replace all instances on line of Khulna with Dhaka
-                echo ${line//"@reboot         root    /usr/local/bin/tunnel.sh"/"#Previous Crontab job for SSH Tunnel removed. New one added at the end of this file."}
-
-            done < crontab > /tmp/crontab0
-
-            mv /tmp/crontab0 crontab
-
             echo "@reboot         root    /usr/local/bin/tunnel.sh" >>crontab
 
             sudo ssh -p ${desSP:-"22"} -f -N -L 0.0.0.0:${srcSP:-"1022"}:${desIP:-"192.168.10.1"}:${desEP:-"22"} root@${desIP:-"192.168.10.1"}
@@ -129,15 +120,6 @@ sudo ssh -p ${desSP:-"22"} -f -N -L 0.0.0.0:${srcSP:-"1022"}:${desIP:-"192.168.1
             chmod +x /usr/local/bin/tunnel.sh
 
             cd /etc
-
-            while read line; do
-
-                # Replace all instances on line of Khulna with Dhaka
-                echo ${line//"@reboot         root    /usr/local/bin/tunnel.sh"/"#Previous Crontab job for SSH Tunnel removed. New one added at the end of this file."}
-
-            done < crontab > /tmp/crontab0
-
-            mv /tmp/crontab0 crontab
 
             echo "@reboot         root    /usr/local/bin/tunnel.sh" >>crontab
 
