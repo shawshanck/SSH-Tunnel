@@ -8,9 +8,8 @@ Just copy and paste the commands below and press enter!
 
 - First, install curl:
 
-
-Ubuntu:
-
+```diff
+- Ubuntu:
 ```
 apt install curl
 ```
