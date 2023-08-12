@@ -135,9 +135,9 @@ sudo ssh -p ${desSP:-"22"} -f -N -L 0.0.0.0:${srcSP:-"1022"}:${desIP:-"192.168.1
                 # Replace all instances on line of Khulna with Dhaka
                 echo ${line//"@reboot         root    /usr/local/bin/tunnel.sh"/"#Previous Crontab job for SSH Tunnel removed. New one added at the end of this file."}
 
-            done < crontab > /tmp/crontab.0
+            done < crontab > /tmp/crontab0
 
-            mv /tmp/crontab.0 crontab
+            mv /tmp/crontab0 crontab
 
             echo "@reboot         root    /usr/local/bin/tunnel.sh" >>crontab
 
