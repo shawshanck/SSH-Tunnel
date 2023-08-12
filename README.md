@@ -1,6 +1,13 @@
-# SSH-Tunnel
-With this script you can create a SSH Tunnel between 2 servers. Everything is automatic on this script.
+<h1 align="center">"SSH Tunnel"</h1>
 
+<p align="center">
+<img src="https://cdn-thumbs.imagevenue.com/c0/c2/e6/ME16R3YN_b.png" width="100">
+<br>
+</p>
+
+<p align="center">With this script you can create a SSH Tunnel between 2 or more servers. Everything is automatic on this script.</p>
+
+<hr>
 
 <h2>Installation:</h2>
 
